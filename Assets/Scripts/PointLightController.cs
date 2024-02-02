@@ -1,14 +1,24 @@
 using UnityEngine;
+using System.Collections;
 
 public class PointLightController : MonoBehaviour
 {
     public Light pointLight;
 
-    void Update()
+    void Start()
     {
-        if (Input.GetKeyDown(KeyCode.L))
+        StartCoroutine(CheckForKeyPress());
+    }
+
+    IEnumerator CheckForKeyPress()
+    {
+        while (true)
         {
-            pointLight.enabled = !pointLight.enabled;
+            if (Input.GetKeyDown(KeyCode.L))
+            {
+                pointLight.enabled = !pointLight.enabled;
+            }
+            yield return null;
         }
     }
 }
