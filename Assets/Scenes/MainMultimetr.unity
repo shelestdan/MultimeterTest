@@ -1526,6 +1526,16 @@ PrefabInstance:
       propertyPath: resistanceText
       value: 
       objectReference: {fileID: 2136068527}
+    - target: {fileID: 6482265960717462185, guid: 851c9e5b1b5af564185835045fc58b26,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6482265960717462185, guid: 851c9e5b1b5af564185835045fc58b26,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: bd595d679525a644ab4a7ca2c7b2f695, type: 2}
     - target: {fileID: 6893009125957411647, guid: 851c9e5b1b5af564185835045fc58b26,
         type: 3}
       propertyPath: m_Name
